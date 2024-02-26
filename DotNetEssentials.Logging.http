@@ -1,6 +1,31 @@
 @DotNetEssentials.Logging_HostAddress = http://localhost:5295
 
-GET {{DotNetEssentials.Logging_HostAddress}}/weatherforecast/
+GET {{DotNetEssentials.Logging_HostAddress}}/basics/
+Accept: application/json
+
+###
+
+GET {{DotNetEssentials.Logging_HostAddress}}/logger-message/
+Accept: application/json
+
+###
+
+GET {{DotNetEssentials.Logging_HostAddress}}/log-properties/
+Accept: application/json
+
+###
+
+GET {{DotNetEssentials.Logging_HostAddress}}/tag-provider/
+Accept: application/json
+
+###
+
+GET {{DotNetEssentials.Logging_HostAddress}}/redactors/
+Accept: application/json
+
+###
+
+GET {{DotNetEssentials.Logging_HostAddress}}/custom-redactor/
 Accept: application/json
 
 ###

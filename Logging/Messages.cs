@@ -20,18 +20,23 @@ namespace DotNetEssentials.Logging.Logging;
  */
 public static partial class Messages
 {
-    [LoggerMessage(Level = LogLevel.Debug, Message = "API endpoint '{endpoint}' called using HTTP method '{method}'.")]
+    [LoggerMessage(Level = LogLevel.Debug, Message = "API endpoint {endpoint} called using HTTP method {method}.")]
     public static partial void EndpointCalled(this ILogger logger, string endpoint, HttpMethod method);
 
-    [LoggerMessage(Message = "Account login failed.")]
-    public static partial void LoginFailed(this ILogger logger, [LogProperties] Account account, LogLevel level);
+    #region Log properties
 
-    [LoggerMessage(Level = LogLevel.Information, Message = "Customer retrieved.")]
-    public static partial void CustomerRetrieved(this ILogger logger, [LogProperties] Account account, [LogProperties] Customer customer);
+    [LoggerMessage(Level = LogLevel.Information, Message = "Episode retrieved.")]
+    public static partial void EpisodeRetrieved(this ILogger logger, [LogProperties] Episode episode);
 
-    [LoggerMessage(Level = LogLevel.Information, Message = "Customer created.")]
-    public static partial void CustomerCreated(this ILogger logger, [LogProperties] Customer customer);
+    [LoggerMessage(Level = LogLevel.Information, Message = "Speaker retrieved.")]
+    public static partial void SpeakerRetrieved(this ILogger logger, [LogProperties] Speaker speaker);
 
-    [LoggerMessage(Level = LogLevel.Information, Message = "Invoice created.")]
-    public static partial void InvoiceCreated(this ILogger logger, [LogProperties] Invoice invoice);
+    #endregion Log properties
+
+    #region Tag Provider
+
+    [LoggerMessage(Level = LogLevel.Information, Message = "Special episode retrieved.")]
+    public static partial void SpecialEpisodeRetrieved(this ILogger logger, [TagProvider(typeof(EpisodeTagProvider), nameof(EpisodeTagProvider.RecordTags))] Episode episode);
+
+    #endregion Tag Provider
 }

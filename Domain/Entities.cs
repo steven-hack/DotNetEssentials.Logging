@@ -1,20 +1,23 @@
-﻿namespace DotNetEssentials.Logging.Domain;
+﻿using DotNetEssentials.Logging.Logging;
 
-public class Account(string name, string email)
+namespace DotNetEssentials.Logging.Domain;
+
+public class Episode(int number, string title, string description)
 {
-    public string Name { get; } = name;
+    public int Number { get; } = number;
 
-    public string Email { get; } = email;
+    public string Title { get; } = title;
+
+    public string Description { get; } = description;
 }
 
-public record Address(string AddressLine, string Zipcode, string City);
-
-public record Customer(string SocialSecurityNumber, string Name, string Email, Address Address)
+public class Speaker(string firstName, string lastName, string location)
 {
-    public Guid Id { get; } = Guid.NewGuid();
-}
+    public string FirstName { get; } = firstName;
 
-public record Invoice(Guid CustomerId, string CreditCardNumber, string Amount)
-{
-    public Guid TransactionId { get; } = Guid.NewGuid();
+    [PrivateData]
+    public string LastName { get; } = lastName;
+
+    [SecretData]
+    public string Location { get; } = location;
 }
