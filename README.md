@@ -3,8 +3,8 @@
 This repository contains the demo project discussed in Betatalks episodes #95 and #96. In these talks, we explore various aspects of logging in .NET, including logger messages, log properties, tag providers, redactors, and enrichers.
 
 This demo project is an integral part of the two-part episode about Logging in .NET, hosted on YouTube. Make sure to watch these episodes to better understand the source code:
-- [Betatalks #95 - .NET Essentials - Logging in .NET (Part 1)](https://youtu.be/sK8WK_I9VYs)
-- Betatalks #96 - .NET Essentials - Logging in .NET (Part 2) (coming soon)
+- [Betatalks #95 - .NET Essentials - Logging (Part 1)](https://youtu.be/sK8WK_I9VYs)
+- Betatalks #96 - .NET Essentials - Logging (Part 2) (coming soon)
 
 For more topics about Software Development in .NET & Azure, check out the entire [Betatalks playlist](https://www.youtube.com/playlist?list=PLCLCtgDNNiJR_LDx6RT8X50VrKAH3_49B) available on YouTube.
 
