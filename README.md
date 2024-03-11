@@ -4,7 +4,7 @@ This repository contains the demo project discussed in Betatalks episodes #95 an
 
 This demo project is an integral part of the two-part episode about Logging in .NET, hosted on YouTube. Make sure to watch these episodes to better understand the source code:
 - [Betatalks #95 - .NET Essentials - Logging in .NET (Part 1)](https://youtu.be/sK8WK_I9VYs)
-- Betatalks #96 - .NET Essentials - Logging in .NET (Part 2) (not yet released)
+- Betatalks #96 - .NET Essentials - Logging in .NET (Part 2) (coming soon)
 
 For more topics about Software Development in .NET & Azure, check out the entire [Betatalks playlist](https://www.youtube.com/playlist?list=PLCLCtgDNNiJR_LDx6RT8X50VrKAH3_49B) available on YouTube.
 
@@ -12,7 +12,7 @@ For more topics about Software Development in .NET & Azure, check out the entire
 
 Logging is an essential aspect of any software application as it helps in understanding application behavior, debugging issues, and monitoring performance. In the .NET ecosystem, logging is facilitated by various frameworks such as Serilog, NLog, and Microsoft.Extensions.Logging.
 
-This project serves as a demonstration of best practices and essential techniques for effective logging in .NET applications.
+This project serves as a demonstration of best practices and essential techniques for effective logging in .NET applications using Microsoft.Extensions.Logging.
 
 ## Features
 
